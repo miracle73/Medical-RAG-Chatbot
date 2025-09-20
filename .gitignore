@@ -2,3 +2,7 @@ venv/
 logs/
 RAG_Medcal_Chatbot.egg-info/
 .env
+app/components/__pycache__/
+app/common/__pycache__/
+app/__pycache__/
+*.pyc

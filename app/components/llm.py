@@ -8,6 +8,7 @@ from app.common.custom_exception import CustomException
 logger = get_logger(__name__)
 
 # def load_llm(model_name: str = "llama-3.1-8b-instant", groq_api_key: str = GROQ_API_KEY):
+# This creates a Huggingface instance which is a wrapper/interface that connects to the HuggingFace model which recieves prompts and provides responses.
 def load_llm(huggingface_repo_id: str = HUGGINGFACE_REPO_ID, hf_token: str = HF_TOKEN):
     try:
         logger.info("Loading LLM from HuggingFace...")
