@@ -37,6 +37,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
-          echo "$Greeting $First_Name $Cloud ${{vars.PROJECT_ID}}".
+          echo "$Greeting $First_Name $Cloud ${{vars.PROJECT_ID}} ${{vars.PROJECT_NAME}}".
         env: 
              First_Name: Vishal
