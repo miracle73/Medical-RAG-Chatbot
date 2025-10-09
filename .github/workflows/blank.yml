@@ -24,6 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     env: 
        Greeting: Hello
+       Pro: ${{vars.PROJECT_NAME}}
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -37,6 +38,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
-          echo "$Greeting $First_Name $cloud ${{secrets.PROJECT_NAME}} ".
+          echo "$Greeting $First_Name $cloud $Pro ".
         env: 
              First_Name: Vishal
