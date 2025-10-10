@@ -38,5 +38,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo "$Greeting $First_Name $cloud ${{vars.PROJECT_NAME}} ".
+          echo "Repository Name: ${{github.repository}}"
+          echo "Workflow Name: ${{github.workflow}}"
+          echo "Triggered by: ${{github.trigerring_actor}}
         env: 
              First_Name: Vishal
