@@ -40,6 +40,6 @@ jobs:
           echo "$Greeting $First_Name $cloud ${{vars.PROJECT_NAME}} ".
           echo "Repository Name: ${{github.repository}}"
           echo "Workflow Name: ${{github.workflow}}"
-          echo "Triggered by: ${{github.trigerring_actor}}
+          echo "Triggered by: ${{github.triggering_actor}}
         env: 
              First_Name: Vishal
